@@ -1,0 +1,54 @@
+
+{
+  "meta": {
+    "loan_id": "LMA-SYND-2024-X",
+    "borrower_name": "Apex Green Energy Ltd",
+    "sector": "Renewables",
+    "status": "active_warning"
+  },
+  "financial_covenants": [
+    {
+      "id": "cov_1",
+      "title": "Leverage Ratio",
+      "clause_ref": "Clause 21.2 (a)",
+      "definition": "Total Net Debt : EBITDA",
+      "limit": 4.00,
+      "limit_type": "max",
+      "limit_snippet": "The ratio of Total Net Debt to EBITDA shall not at any time exceed 4.00 to 1.",
+      "current_value": 3.85,
+      "status": "warning",
+      "trend_data": [
+        { "month": "Jan", "value": 2.5 },
+        { "month": "Feb", "value": 2.8 },
+        { "month": "Mar", "value": 3.1 },
+        { "month": "Apr", "value": 3.85 }
+      ],
+      "risk_analysis": "The company's EBITDA has seen a slight decline over the past quarter due to increased operational costs in commissioning a new turbine field. While the leverage ratio is still within the covenant limit, the current trend indicates a potential breach in the next reporting period if profitability does not improve. Projections show that a further 5% decrease in EBITDA would trigger a breach."
+    },
+    {
+      "id": "cov_2",
+      "title": "Interest Cover",
+      "clause_ref": "Clause 21.3",
+      "definition": "EBITDA : Net Finance Charges",
+      "limit": 3.00,
+      "limit_type": "min",
+      "limit_snippet": "The ratio of EBITDA to Net Finance Charges shall not at any time be less than 3.00 to 1.",
+      "current_value": 5.2,
+      "status": "healthy",
+      "trend_data": [
+        { "month": "Jan", "value": 6.0 },
+        { "month": "Feb", "value": 5.8 },
+        { "month": "Mar", "value": 5.5 },
+        { "month": "Apr", "value": 5.2 }
+      ],
+      "risk_analysis": "The Interest Cover ratio remains strong, indicating sufficient earnings to cover interest payments. The slight downward trend is consistent with the EBITDA dip but remains well above the covenant minimum. The buffer is substantial, and there is no immediate risk of a breach from this covenant's perspective. It provides a good cushion against unforeseen financial headwinds."
+    }
+  ],
+  "esg_kpi": {
+    "title": "Carbon Reduction Target",
+    "target": 15,
+    "current": 12,
+    "unit": "% reduction",
+    "commercial_impact": "Interest rate reduces by 0.10% if target hit."
+  }
+}
